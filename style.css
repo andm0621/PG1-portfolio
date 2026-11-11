@@ -26,7 +26,7 @@ body {
     top: 0;
     width: 100%;
     box-sizing: border-box; /* paddingを含めた100%幅にする（重要） */
-    background-color: #F4DEDF; /* 背景色を薄いピンクに変更 */
+    background-color: #F8BBD0; /* 背景色を薄いピンクに変更 */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); /* ほんのり影をつける */
     padding: 16px 32px;
     z-index: 1000;
