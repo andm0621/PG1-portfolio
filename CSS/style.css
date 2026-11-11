@@ -65,7 +65,7 @@ body {
 .container {
     max-width: 700px;
     margin: 0 auto;
-    padding: 40px 20px;
+    padding: 40px 20px 40px 35px; /* 上下左右の余白を調整 */
 }
 
 /* Hero (Home) セクション */
