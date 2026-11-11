@@ -103,6 +103,76 @@ body {
     padding-bottom: 8px;
 }
 
+.project-list {
+    display: flex;
+    flex-direction: column; /* 縦並び */
+    gap: 32px; /* Projects間の間隔 */
+    margin-top: 20px;
+}
+
+.project-card {
+    border: 1px solid #e1e8ed;
+    border-radius: 12px;
+    background-color: #ffffff;
+    padding: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.project-content h3 {
+    font-size: 1.3rem;
+    color: #2c3e50;
+    margin-bottom: 8px;
+}
+
+.project-content p {
+    font-size: 0.95rem;
+    color: #555555;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+/* 技術タグ */
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px; /* 画像エリアとの間の余白 */
+}
+
+.tech-tags span {
+    font-size: 0.8rem;
+    background-color: #eaf4fb;
+    color: #3498db;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.project-image-gallery {
+    display: grid;
+    /* 画面サイズに応じて幅200px以上の画像を均等に自動配置 */
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+    background-color: #f8fafc;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.project-image-gallery img {
+    width: 100%;
+    height: 140px; /* 画像の高さを統一 */
+    object-fit: cover; /* 画像の比率を崩さずに枠へ収める */
+    border-radius: 6px;
+    border: 1px solid #e2e8f0;
+    transition: transform 0.2s ease;
+}
+
+/* マウスを置いた画像だけ少し拡大 */
+.project-image-gallery img:hover {
+    transform: scale(1.03);
+}
+
+
 /* Skills リスト */
 .skill-list {
     list-style: none;
