@@ -21,13 +21,12 @@ body {
 .navbar {
     display: flex; /* ロゴとナビを横並びに */
     justify-content: space-between;
+    align-items: center; /* 上下中央揃え */
     position: fixed;
     top: 0;
     width: 100%;
     background-color: #F4DEDF; /* 背景色を薄いピンクに変更 */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); /* ほんのり影をつける */
-    position: sticky; /* スクロールしても上部に固定 */
-    align-items: center; /* 上下中央揃え */
     padding: 16px 32px;
     z-index: 1000;
 }
@@ -190,17 +189,58 @@ body {
     font-weight: 500;
 }
 
-/* History タイムライン */
-.timeline-item {
-    display: flex;
-    gap: 16px;
-    margin-bottom: 12px;
+/* タイムライン全体のコンテナ */
+.timeline {
+    position: relative;
+    padding-left: 24px; /* 縦ラインのための左余白 */
+    margin-top: 20px;
 }
 
+/* タイムラインの垂直な縦線 */
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 7px; /* ドットの中心を通る位置 */
+    top: 6px;
+    bottom: 6px;
+    width: 2px;
+    background-color: #e1e8ed; /* 薄いグレーの線 */
+}
+.timeline-item {
+position: relative;
+    margin-bottom: 24px;
+}
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+/* 年月日の上の「丸ドット」 */
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -24px; /* 縦線の位置へ合わせる */
+    top: 6px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%; /* 正円にする */
+    background-color: #ffffff;
+    border: 3px solid #F4DEDF; /* アクセントカラーの青枠 */
+    box-sizing: border-box;
+    z-index: 1; /* 線より手前に表示 */
+}
+/* 日付スタイル */
 .timeline-item .date {
+    display: inline-block;
+    font-size: 0.85rem;
     font-weight: bold;
-    color: #2563eb;
-    min-width: 70px;
+    color: #F4DEDF; /* テーマカラー */
+    margin-bottom: 4px;
+}
+/* 出来事の本文 */
+.timeline-item p {
+    font-size: 0.95rem;
+    color: #333333;
+    margin: 0;
+    line-height: 1.5;
 }
 
 /* フッター */
