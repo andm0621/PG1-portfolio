@@ -26,7 +26,7 @@ body {
     top: 0;
     width: 100%;
     box-sizing: border-box; /* paddingを含めた100%幅にする（重要） */
-    background-color: #F4DEDF; /* 背景色を薄いピンクに変更 */
+    background-color: #fbaed2; /* 背景色を薄いピンクに変更 */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); /* ほんのり影をつける */
     padding: 16px 32px;
     z-index: 1000;
@@ -58,7 +58,8 @@ body {
 }
 
 .navbar a:hover {
-    color: #fbaed2; /* マウスを乗せたときに青色にする */
+    color: #fbaed2; /* マウスを乗せたとき色を変える */
+    transform: translateY(-3px);
 }
 
 /* メインコンテナ */
@@ -111,7 +112,7 @@ body {
 }
 
 .project-card {
-    border: 1px solid #e1e8ed;
+    border: 1px solid #f8fafc;
     border-radius: 12px;
     background-color: #ffffff;
     padding: 24px;
@@ -141,7 +142,7 @@ body {
 
 .tech-tags span {
     font-size: 0.8rem;
-    background-color: #eaf4fb;
+    background-color: #f8fafc;
     color: #fbaed2;
     padding: 4px 10px;
     border-radius: 4px;
@@ -212,10 +213,6 @@ body {
     color: #475569;
 }
 
-.skill-item:hover {
-    transform: translateY(-5px);
-}
-
 .skill-list li {
     background-color: #eff6ff;
     color: #fbaed2;
@@ -268,7 +265,7 @@ position: relative;
     display: inline-block;
     font-size: 0.85rem;
     font-weight: bold;
-    color: #F4DEDF; /* テーマカラー */
+    color: #fbaed2; /* テーマカラー */
     margin-bottom: 4px;
 }
 /* 出来事の本文 */
