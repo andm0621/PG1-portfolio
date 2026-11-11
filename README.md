@@ -5,9 +5,9 @@
 ## 概要
 自身の制作実績，使用言語，プロフィールなどをまとめたWebサイトです．
 
-## 使用技術 (Tech Stack)
-- **Languages:** Python / C / HTML / CSS
-- **Tools:** Git / GitHub / VS Code
+## 使用技術
+- **言語:** Python / C / HTML / CSS
+- **ツール:** Git / GitHub / VS Code
 
 ## サイトURL
 https://（公開したWebサイトのURL）
