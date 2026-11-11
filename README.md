@@ -7,7 +7,7 @@
 
 ## 使用技術
 - **言語:** Python / C / HTML / CSS
-- **ツール:** Git / GitHub / VS Code
+- **ツール:** GitHub / VS Code
 
 ## サイトURL
 https://github.com/andm0621/PG1-portfolio
