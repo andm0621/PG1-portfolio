@@ -10,7 +10,7 @@
 - **ツール:** Git / GitHub / VS Code
 
 ## サイトURL
-https://（公開したWebサイトのURL）
+https://github.com/andm0621/PG1-portfolio
 
 ## ローカルでの実行方法
 1. このリポジトリをクローンします．
