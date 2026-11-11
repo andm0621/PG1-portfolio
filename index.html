@@ -4,59 +4,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PORTFOLIO | andm</title>
-    <!-- CSSファイルを読み込む設定 -->
+    <title>andm's Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="container">
-        <!-- ヘッダー・プロフィール基本情報 -->
-        <header class="header">
-            <h1 class="name">andm's Portfolio</h1>
-            <p class="tagline">現在プログラミングを勉強中です．</p>
-        </header>
+    <!-- 固定ヘッダーナビゲーション -->
+    <header class="navbar">
+        <div class="nav-logo">andm's Portfolio</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#history">History</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <!-- メインコンテンツ -->
-        <main class="profile-content">
-            <section class="card">
-                <h2>Home</h2>
-                <h1 class="Home-list">andm's Portfolio</h1>
-            </section>
+    <!-- メインコンテンツ -->
+    <main class="container">
+        <!-- Home / Hero セクション -->
+        <section id="home" class="hero">
+            <h1 class="main-title">andm's Portfolio</h1>
+            <p class="sub-title">プログラミングを勉強中です。</p>
+        </section>
 
-            <section class="card">
-                <h2>Project</h2>
-                <p class="Project-text">点字変換ツール, 課題スケジュール管理アプリ</p>
-            </section>
+        <!-- Projects セクション -->
+        <section id="projects" class="card">
+            <h2>Projects</h2>
+            <div class="project-item">
+                <h3>ポートフォリオサイト</h3>
+                <p>自身を紹介するために制作したWebサイトです。</p>
+            </div>
+        </section>
 
-            <section class="card">
-                <h2>Skills</h2>
-                <ul class="skills-list">
-                    <li>Python C C++ HTML CSS</li>
-                </ul>
-            </section>
+        <!-- Skills セクション -->
+        <section id="skills" class="card">
+            <h2>Skills</h2>
+            <ul class="skill-list">
+                <li>Python</li>
+                <li>C</li>
+                <li>HTML / CSS</li>
+                <li>Git / GitHub</li>
+                <li>VS Code</li>
+            </ul>
+        </section>
 
-            <section class="card">
-                <h2>Profile</h2>
-                <ul class="info-list">
-                    <li>大阪公立大学工業高等専門学校 2年</li>
-                    <li>知能情報コース所属</li>
-                </ul>
-            </section>
+        <!-- Profile セクション -->
+        <section id="profile" class="card">
+            <h2>Profile</h2>
+            <p><strong>所属：</strong>大阪公立大学工業高等専門学校 2年 知能情報コース</p>
+            <p><strong>名前：</strong>Mio (andm)</p>
+        </section>
 
-            <section class="card">
-                <h2>History</h2>
-                <ul class="history-list">
-                    <li>2025年 4月 - 大阪公立大学工業高等専門学校総合システム学科配属</li>
-                    <li>           - プログラミング学習開始</li>
-                    <li>2025年 9月 - 点字変換ツール開発</li>
-                    <li>2026年 4月 - 知能情報コース配属</li>
-                    <li>           - Arduinoプログラミング学習開始</li>
-                    <li>2026年 11月 - 課題スケジュール管理アプリ開発開始</li>
-                </ul>
-            </section>
-        </main>
-    </div>
+        <!-- History セクション -->
+        <section id="history" class="card">
+            <h2>History</h2>
+            <div class="timeline-item">
+                <span class="date">2023.04</span>
+                <p>大阪公立大学工業高等専門学校 入学</p>
+            </div>
+            <div class="timeline-item">
+                <span class="date">2024.04</span>
+                <p>知能情報コース 配属</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; andm's Portfolio</p>
+    </footer>
 </body>
 
 </html>
