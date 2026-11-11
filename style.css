@@ -58,7 +58,7 @@ body {
 }
 
 .navbar a:hover {
-    color: #3498db; /* マウスを乗せたときに青色にする */
+    color: #fbaed2; /* マウスを乗せたときに青色にする */
 }
 
 /* メインコンテナ */
@@ -97,7 +97,7 @@ body {
 
 .card h2 {
     font-size: 1.4rem;
-    color: #2563eb;
+    color: #fbaed2;
     margin-bottom: 16px;
     border-bottom: 2px solid #eff6ff;
     padding-bottom: 8px;
@@ -142,7 +142,7 @@ body {
 .tech-tags span {
     font-size: 0.8rem;
     background-color: #eaf4fb;
-    color: #3498db;
+    color: #fbaed2;
     padding: 4px 10px;
     border-radius: 4px;
     font-weight: bold;
@@ -212,7 +212,7 @@ body {
 
 .skill-list li {
     background-color: #eff6ff;
-    color: #1d4ed8;
+    color: #fbaed2;
     padding: 6px 14px;
     border-radius: 20px;
     font-size: 0.9rem;
@@ -253,7 +253,7 @@ position: relative;
     height: 12px;
     border-radius: 50%; /* 正円にする */
     background-color: #ffffff;
-    border: 3px solid #F4DEDF; /* アクセントカラーの青枠 */
+    border: 3px solid #fbaed2; /* アクセントカラーの青枠 */
     box-sizing: border-box;
     z-index: 1; /* 線より手前に表示 */
 }
