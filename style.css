@@ -54,7 +54,7 @@ body {
     color: #555555;
     font-weight: 500;
     font-size: 0.95rem;
-    transition: color 0.2s ease;
+    transition: color 0.2s ease, transform 0.2s ease;
 }
 
 .navbar a:hover {
